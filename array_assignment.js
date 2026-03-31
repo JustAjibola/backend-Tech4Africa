@@ -9,3 +9,15 @@ numbers.forEach(function(number) {
 numbers.forEach(number => {
     console.log(number * 2);
 });
+
+//Question 2 forEach()
+const names = ["Esther","John", "Ada", "Mike"];
+//named function
+names.forEach(function(name) {
+    console.log("Hello" + name + "!");
+});
+
+//arrow function
+names.forEach(name => {
+    console.log("Hello " + name + "!");
+}); 
