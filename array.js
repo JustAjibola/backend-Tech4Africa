@@ -49,3 +49,44 @@ let adults = ages.filter(function(age) {
     return age >= 18;
 });
 console.log(adults); // Output: [20, 25, 30, 35, 40, 18]
+
+//find method
+const studentNames = ["john", "Ada", "Mike", "Esther", "john"];
+let found = studentNames.find(function(name) {
+    return name === "john";
+});
+console.log(found); // Output: "john" (the first occurrence of "john" in the studentNames array)    
+
+//reduce method
+let cartPrices = [1500, 800, 2200, 450, 1000];
+
+let total = cartPrices.reduce(function(accumulator, currentPrice) {
+    return accumulator + currentPrice;
+}, 1000); // 1000 is the starting value
+
+  console.log(total); 
+
+  //Arrow function
+  let grandTotal = cartPrices.reduce((accumulator, currentPrice) => { 
+    return accumulator + currentPrice;
+  }, 0);
+  console.log(grandTotal); 
+
+  //push , pop , shift , unshift
+let colors = ["red", "green", "blue"];
+colors.push("yellow");
+
+let lastColor = colors.pop();
+console.log (colors); // Output: ["red", "green", "blue"]
+console.log(lastColor); 
+
+let firstColor = colors.shift();
+console.log(colors); 
+console.log(firstColor);
+
+let newLength = colors.unshift("purple");
+console.log(colors); 
+console.log(newLength);
+
+
+
